@@ -72,3 +72,5 @@ clear_output()
 config="vmess://"+base64.b64encode(json.dumps(d).encode()).decode("utf-8")
 print(config)
 
+
+
