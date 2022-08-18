@@ -1,16 +1,16 @@
 name: Python application
 
-run
-on:
+run:
+  on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-    paths:
-      - 'main.py'
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - 'main.py'
+    push:
+      branches: [ "main" ]
+     # paths:
+      #  - 'main.py'
+    pull_request:
+      branches: [ "main" ]
+    #  paths:
+      #  - 'main.py'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
