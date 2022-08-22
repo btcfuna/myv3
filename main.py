@@ -56,7 +56,7 @@ print("Setting up tunnel ... ")
 Server = PortForward_wrapper(
     PORT_FORWARD, TOKEN, USE_FREE_TOKEN, [['v2ray', port, 'http']],
     REGION.lower(), [f"{HOME}/.ngrok2/V2ray.yml", 8097]
-).start('v2ray', displayB=False)
+).start('dstadminis', displayB=False)
 
 d=json.loads('{"add":"{0}","aid":"64","host":"","id":"{1}","net":"ws","path":"","port":"80","ps":"1","tls":"","type":"none","v":"2"}')
 d["add"]=re.search("(?<=//).*?(/|$)",Server["url"]).group()
