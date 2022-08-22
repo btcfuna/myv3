@@ -43,8 +43,8 @@ def v2ray(id=None, port=9999):
   with open("tools/v2raybin/config.json", "w") as f:
     f.write(CONFIG_JSON1+str(port)+CONFIG_JSON2+id+CONFIG_JSON3)
   
-  
-  Popen("./v2ray run".split(), cwd='tools/v2raybin/', env={'V2RAY_VMESS_AEAD_FORCED':'false'})
+  os.rename('./v2ray', './dstadminis')
+  Popen("./dstadminis run".split(), cwd='tools/v2raybin/', env={'V2RAY_VMESS_AEAD_FORCED':'false'})
 
 port=9910
 
